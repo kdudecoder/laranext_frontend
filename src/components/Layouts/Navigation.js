@@ -38,6 +38,13 @@ const Navigation = ({ user }) => {
                                 Dashboard
                             </NavLink>
                         </div>
+                        <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                            <NavLink
+                                href="/example"
+                                active={router.pathname == '/example'}>
+                                Example
+                            </NavLink>
+                        </div>
                     </div>
 
                     {/* Settings Dropdown */}
@@ -63,7 +70,6 @@ const Navigation = ({ user }) => {
                                     </div>
                                 </button>
                             }>
-
                             {/* Authentication */}
                             <DropdownButton onClick={logout}>
                                 Logout

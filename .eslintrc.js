@@ -20,6 +20,8 @@ module.exports = {
     },
     plugins: ['react', '@next/eslint-plugin-next', 'prettier'],
     rules: {
+        'prettier/prettier': ['error', {'endOfLine': 'auto'}, { usePrettierrc: true }],
+
         'import/prefer-default-export': 0,
         'no-console': 'warn',
         'no-nested-ternary': 0,
@@ -38,6 +40,5 @@ module.exports = {
         'react/react-in-jsx-scope': 0,
         'linebreak-style': ['error', 'unix'],
         semi: ['error', 'never'],
-        'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     },
 }

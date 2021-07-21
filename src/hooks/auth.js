@@ -78,11 +78,16 @@ export const useAuth = ({ middleware } = {}) => {
     }
 
     const logout = () => {
-        axios.post('/logout').then(() => {
-            revalidate()
+        axios
+            .post('/logout')
+            .then(() => {
+                revalidate()
 
-            window.location.pathname = '/login'
-        })
+                window.location.pathname = '/login'
+            })
+            .catch(() => {
+                window.location.pathname = '/login'
+            })
     }
 
     useEffect(() => {

@@ -32,7 +32,6 @@ const Login = () => {
                         </a>
                     </Link>
                 }>
-
                 {/* Session Status */}
                 <AuthSessionStatus className="mb-4" status={null} />
 
@@ -54,7 +53,6 @@ const Login = () => {
                             autoFocus
                         />
                     </div>
-
                     {/* Password */}
                     <div className="mt-4">
                         <Label htmlFor="password">Password</Label>
@@ -69,7 +67,6 @@ const Login = () => {
                             autoComplete="current-password"
                         />
                     </div>
-
                     {/* Remember Me */}
                     <div className="block mt-4">
                         <label
